@@ -2,21 +2,19 @@
 print('-' * 70)
 valor = list()
 while True:
-        ent = input('Digite um valor: ')
-        
-        #verifica se a entrada é númerica, incluindo o 0
-        if ent.isnumeric():
-            val = int(ent)
-            valor.append(val)
-            print(f'Valor adicionado com\033[32m sucesso\033[m...')
-            
-            resp = ' '
-            while resp not in 'SN':
-                resp = str(input('Você quer adicionar +1 valor? [S/N]: ')).strip().upper()[0]
-            if resp == 'N':
-                break
-        else:
-            print('Não é um número válido')
+    n = int(input('Digite um valor: '))
+    
+    if n not in valor:
+        valor.append(n)
+        print(f'Valor\033[32m adicionado\033[m...')
+    else:
+        print(f'Valor\033[33m duplicado\033[m, não irei adicionar!')
+
+    #sim ou não
+    resp = str(input('Você quer digitar +1 valor? [S/N]: ')).strip().upper()[0]
+    if resp in 'N':
+        break
 print()
-print(f'Você digitou os valores:\033[31m {valor} \033[m')
+valor.sort()
+print(f'Você digitou os valores: {valor}')
 print('-' * 70)
