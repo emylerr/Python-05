@@ -1,6 +1,6 @@
 #inserir valores
 print('-' * 70)
-valor = list()
+valor = []
 maior = menor = 0
 posmax = posmin = 0
 
