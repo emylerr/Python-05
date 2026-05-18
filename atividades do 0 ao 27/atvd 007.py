@@ -1,4 +1,4 @@
-#inserir valores
+#Inserir valores
 print('-' * 70)
 valor = []
 maior = menor = 0

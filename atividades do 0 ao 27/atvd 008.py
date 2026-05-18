@@ -1,4 +1,4 @@
-#varios valores e nenhum igual.
+#Varios valores e nenhum igual.
 print('-' * 70)
 valor = list()
 while True:
