@@ -1,4 +1,4 @@
-#Valores nas posições que foram digitadas
+#Valores em ordem sem usar o sort()
 print('-' * 70)
 lista = []
 for cont in range(0,5):
